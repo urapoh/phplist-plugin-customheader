@@ -48,14 +48,14 @@ class customHeaderPlugin extends phplistPlugin
 	public $settings = array(
 		"header_name" => array (
 			'value' => "Feedback-ID",
-			'description' => 'Defines custom header name',
+			'description' => 'Custom email header name',
 			'type' => "text",
 			'allowempty' => 0,
 			'category'=> 'reporting',
 		),
 		"header_text" => array (
 			'value' => "CampaignID",
-			'description' => 'Defines custom header text',
+			'description' => 'Custom email header text',
 			'type' => "text",
 			'allowempty' => 0,
 			'category'=> 'reporting',
