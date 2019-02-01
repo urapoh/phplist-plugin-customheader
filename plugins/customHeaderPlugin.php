@@ -84,16 +84,11 @@ class customHeaderPlugin extends phplistPlugin
    * @param object $mail
    * @return array (headeritem => headervalue)
    *
-   * Our use is to alter the subject line for the $mail object
-   *
-   * This is the last point at which we can reach into the queue processing and
-   * modify the subject line.
-   *
  */
   
     public function messageHeaders($mail)
     {
-        return array(getConfig('header_name') => getConfig('header_text')); //@@@
+        return array(getConfig('header_name') => getConfig('header_text'));
     }
 }
   
